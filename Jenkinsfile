@@ -4,13 +4,13 @@ pieline {
   stages {
     stage('compile java program')
       steps  {
-        bat 'javac Helloworld.java'
+        bat 'javac HelloWorld.java'
       }
   }
 }
 stage('Run java program')  {
   steps {
-    bat 'java Helloworld'
+    bat 'java HelloWorld'
   }
 }
 }
